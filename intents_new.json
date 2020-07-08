@@ -1,0 +1,69 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Inflight entertainment portal, Call flight Assistant for further assistance, Assist Ordering food and bevereges ", "Offering support for inflight food orders, Requesting flight assistance help, Guide through inflight enteratinment app"]
+        },
+        {"tag": "entertainment_movies",
+         "patterns": ["Where to watch movies?", "How to navigate to movies?", "Give me a list of movies available to watch", "List all movies", "Which movies are available to see?" ],
+         "responses": ["Navigating to Movies"],
+         "context": ["entertainment_movies_module"]
+        },
+        {"tag": "entertainment_music",
+         "patterns": ["Where to listen to music?", "How to navigate to music?", "Give me a list of music albums available to listen", "List all songs", "Play some music" ],
+         "responses": ["Navigating to Music"],
+         "context": ["entertainment_music_module"]
+        },
+        {"tag": "flight_assistant",
+         "patterns": ["Need flight assistant", "Call flight assistant", "Have some doubts, can I talk to flight assistant" ],
+         "responses": ["Please provide your seat number"],
+         "context": ["flight_assistant_by_seatnumber"]
+        },
+        {"tag": "flight_assistant_request",
+         "patterns": [],
+         "responses": ["Your help is on the way..."],
+         "context": ["flight_assistant_by_seatnumber"]
+        },
+        {"tag": "order_food",
+         "patterns": ["I want to order some food", "What is on the menu for food", "Food options available", "Show food items available", "What is there to eat?", "How to order food?" ],
+         "responses": ["Navigating to food menu. Feel free to order here whenever you are ready.."],
+         "context": ["order_food_module"]
+        },
+        {"tag": "order_drinks",
+         "patterns": ["I want to order some beverages", "What is on the menu for drinks", "drink options available", "Show beverages available", "What is there to drink?", "How to order drinks?" ],
+         "responses": ["Navigating to drinks menu"],
+         "context": ["order_food_module"]
+        },
+        {"tag": "weather_search",
+         "patterns": ["What is the weather like", "What is the weather outside", "Weather today?" ],
+         "responses": ["Navigating to weather page"],
+         "context": ["weather_search_module"]
+        },
+        {"tag": "order_dessert",
+         "patterns": ["I want to order some desserts", "What is on the dessert menu", "Dessert options available", "Show dessert items available", "What is there in desserts?", "How to order desserts?" ],
+         "responses": ["We have delicious dessert options available. Navigating to Dessert Menu. Feel free to order here whenever you are ready.."],
+         "context": ["order_food_module"]
+        },
+        {"tag": "tellmejoke",
+         "patterns": ["Tell me a joke", "I am bored, tell me a joke" ],
+         "responses": ["Why do we tell actors to break a leg? Because every play has a cast."]
+        }
+   ]
+}
