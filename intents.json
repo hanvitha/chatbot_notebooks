@@ -19,47 +19,51 @@
         },
         {"tag": "options",
          "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure and Pharmacies"]
+         "responses": ["I can guide you through Inflight entertainment portal, Call flight Assistant for further assistance, Assist Ordering food and bevereges ", "Offering support for inflight food orders, Requesting flight assistance help, Guide through inflight enteratinment app"]
         },
-        {"tag": "adverse_drug",
-         "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
-         "responses": ["Navigating to Adverse drug reaction module"],
-         "context": ["adverse_drug_module"]
+        {"tag": "entertainment_movies",
+         "patterns": ["Where to watch movies?", "How to navigate to movies?", "Give me a list of movies available to watch", "List all movies", "Which movies are available to see?" ],
+         "responses": ["Navigating to Movies"],
+         "context": ["entertainment_movies_module"]
         },
-        {"tag": "blood_pressure",
-         "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
-         "responses": ["Navigating to Blood Pressure module"],
-         "context": ["blood_pressure_module"]
+        {"tag": "entertainment_music",
+         "patterns": ["Where to listen to music?", "How to navigate to music?", "Give me a list of music albums available to listen", "List all songs", "Play some music" ],
+         "responses": ["Navigating to Music"],
+         "context": ["entertainment_music_module"]
         },
-        {"tag": "blood_pressure_search",
-         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
-         "responses": ["Please provide Patient ID", "Patient ID?"],
-         "context": ["search_blood_pressure_by_patient_id"]
+        {"tag": "flight_assistant",
+         "patterns": ["Need flight assistant", "Call flight assistant", "Have some doubts, can I talk to flight assistant" ],
+         "responses": ["Please provide your seat number"],
+         "context": ["flight_assistant_by_seatnumber"]
         },
-        {"tag": "blood_pressure_search_answer",
+        {"tag": "flight_assistant_request",
          "patterns": [],
-         "responses": ["Searching Blood pressure history for Patient"],
-         "context": ["search_blood_pressure_by_patient_id"]
+         "responses": ["Your help is on the way..."],
+         "context": ["flight_assistant_by_seatnumber"]
         },
-        {"tag": "pharmacy_search",
-         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
-         "responses": ["Please provide pharmacy name"],
-         "context": ["search_pharmacy_by_name"]
+        {"tag": "order_food",
+         "patterns": ["I want to order some food", "What is on the menu for food", "Food options available", "Show food items available", "What is there to eat?", "How to order food?" ],
+         "responses": ["Navigating to food menu. Feel free to order here whenever you are ready.."],
+         "context": ["order_food_module"]
         },
-        {"tag": "pharmacy_search_answer",
-         "patterns": [],
-         "responses": ["Searching Pharmacy"],
-         "context": ["search_pharmacy_by_name"]
+        {"tag": "order_drinks",
+         "patterns": ["I want to order some beverages", "What is on the menu for drinks", "drink options available", "Show beverages available", "What is there to drink?", "How to order drinks?" ],
+         "responses": ["Navigating to drinks menu"],
+         "context": ["order_food_module"]
         },
-        {"tag": "hospital_search",
-         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
-         "responses": ["Please provide hospital name, type or location"],
-         "context": ["search_hospital_by_name"]
+        {"tag": "weather_search",
+         "patterns": ["What is the weather like", "What is the weather outside", "Weather today?" ],
+         "responses": ["Navigating to weather page"],
+         "context": ["weather_search_module"]
         },
-        {"tag": "hospital_search_answer",
-         "patterns": [],
-         "responses": ["Searching Hospital"],
-         "context": ["search_hospital_by_name"]
+        {"tag": "order_dessert",
+         "patterns": ["I want to order some desserts", "What is on the dessert menu", "Dessert options available", "Show dessert items available", "What is there in desserts?", "How to order desserts?" ],
+         "responses": ["We have delicious dessert options available. Navigating to Dessert Menu. Feel free to order here whenever you are ready.."],
+         "context": ["order_food_module"]
+        },
+        {"tag": "tellmejoke",
+         "patterns": ["Tell me a joke", "I am bored, tell me a joke" ],
+         "responses": ["Why do we tell actors to break a leg? Because every play has a cast."]
         }
    ]
 }
