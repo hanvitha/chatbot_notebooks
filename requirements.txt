@@ -5,6 +5,7 @@ numpy==1.19.0
 Pillow==7.1.2
 scikit-learn
 scipy==1.4.1
+pandas
 tensorboard==2.2.2
 tensorboard-plugin-wit==1.7.0
 tensorflow==2.2.0
