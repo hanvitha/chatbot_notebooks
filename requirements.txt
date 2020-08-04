@@ -11,3 +11,8 @@ tensorboard-plugin-wit==1.7.0
 tensorflow==2.2.0
 tensorflow-estimator==2.2.0
 requests>=2.21.0
+werkzeug
+altair==4.1.0
+vega==3.2.0
+pyarrow==0.16.0
+xgboost==1.1.0
