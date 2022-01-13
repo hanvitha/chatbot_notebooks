@@ -2,7 +2,7 @@ joblib==0.15.1
 keras
 nltk==3.5
 numpy==1.19.0
-Pillow==7.1.2
+Pillow==9.0.0
 scikit-learn
 scipy==1.4.1
 pandas
