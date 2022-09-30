@@ -1,4 +1,4 @@
-joblib==0.15.1
+joblib==1.2.0
 keras
 nltk==3.5
 numpy==1.19.0
